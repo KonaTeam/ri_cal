@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ri_cal}
-  s.version = "0.8.8q"
+  s.version = "0.8.8r"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Rick DeNatale"]
-  s.date = %q{2011-02-13}
+  s.authors = ["Rick DeNatale", "Mark Nadig", "Many Contributors"]
+  s.date = %q{2013-12-16}
   s.default_executable = %q{ri_cal}
   s.description = %q{A new Ruby implementation of RFC2445 iCalendar.
 
@@ -187,7 +187,7 @@ A Google group for discussion of this library has been set up http://groups.goog
     "spec/ri_cal/property_value_spec.rb",
     "spec/ri_cal/required_timezones_spec.rb",
     "spec/ri_cal_spec.rb",
-    "spec/spec.opts",
+    "spec/.rspec",
     "spec/spec_helper.rb",
     "tasks/gem_loader/load_active_support.rb",
     "tasks/gem_loader/load_tzinfo_gem.rb",

@@ -224,7 +224,7 @@ module RiCal
     # If the receiver is not bounded then the second element will be nil.
     #
     # The purpose of this method is to provide values which may be used as database attributes so
-    # that a query can find all occurence enumerating components which may have occurrences within
+    # that a query can find all occurrence enumerating components which may have occurrences within
     # a range of times.
     def zulu_occurrence_range
       if bounded?

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ri_cal (0.8.8q)
+    ri_cal (0.8.8r)
 
 GEM
   remote: http://rubygems.org/

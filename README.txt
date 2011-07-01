@@ -384,6 +384,11 @@ or by a recent(>= 2.2) version of the ActiveSupport gem which is part of Ruby on
     6. gem build ri_cal.gemspec
 
 
+== CONTRIBUTING:
+   Please submit a PR with associated tests.
+   To run tests locally:
+      $ bundle
+      $ rspec spec/*
 
 == LICENSE:
 

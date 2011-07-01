@@ -153,7 +153,7 @@ spec/ri_cal/property_value/utc_offset_spec.rb
 spec/ri_cal/property_value_spec.rb
 spec/ri_cal/required_timezones_spec.rb
 spec/ri_cal_spec.rb
-spec/spec.opts
+spec/.rspec
 spec/spec_helper.rb
 tasks/gem_loader/load_active_support.rb
 tasks/gem_loader/load_tzinfo_gem.rb

@@ -143,9 +143,10 @@ module RiCal
         end
 
         # convert time from this time zone to utc time
-        def local_to_utc(time)
+        # See period_for_local for explanation of dst parameter.
+        def local_to_utc(time, dst=nil)
           time = time.to_ri_cal_date_time_value
-          period = period_for_local(time)
+          period = period_for_local(time, dst)
           converted = time - period.tzoffsetto_property
           converted.tzid = "UTC"
           converted

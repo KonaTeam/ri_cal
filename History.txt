@@ -1,3 +1,6 @@
+=== v0.8.8r 2013-12-16
+   Merge fix from https://github.com/dustacio/ri_cal/commit/c25430e3defbf100529335cbc25a20a762327717
+
 === v0.8.8q 2013-10-16
    Merge PRs fix for "BYMONTHDAY" occurrences. Thanks @skarpesh
 === v0.8.8p 2013-8-8
