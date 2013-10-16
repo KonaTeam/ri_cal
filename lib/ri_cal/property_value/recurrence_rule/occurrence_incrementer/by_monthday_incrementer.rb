@@ -8,7 +8,7 @@ module RiCal
           def self.for_rrule(rrule)
             conditional_incrementer(rrule, :bymonthday, DailyIncrementer)
           end
-          
+
           def scope_of(date_time)
             date_time.month
           end
@@ -19,6 +19,11 @@ module RiCal
 
           def advance_cycle(date_time)
             first_day_of_month(advance_month(date_time))
+          end
+
+          def occurrences_for(date_time)
+            @scoping_value = scope_of(date_time)
+            self.occurrences = list.map {|numbered_day| numbered_day.target_date_time_for(date_time)}.uniq.sort
           end
 
           def end_of_occurrence(date_time)
