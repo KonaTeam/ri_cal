@@ -1,3 +1,5 @@
+=== v0.8.8q 2013-10-16
+   Merge PRs fix for "BYMONTHDAY" occurrences. Thanks @skarpesh
 === v0.8.8p 2013-8-8
    Merge fixes from PRs:
    merge wkst_day fix https://github.com/austincgt/ri_cal/commit/288c9e78bcdef3461c6082abbf592f574c232838
