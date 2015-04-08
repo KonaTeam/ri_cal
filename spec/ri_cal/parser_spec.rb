@@ -22,6 +22,10 @@ describe RiCal::Parser do
     it "should strip surrounding quotes" do
       RiCal::Parser.params_and_value(";TZID=\"(GMT-05.00) Eastern Time (US & Canada)\":20090804T120000").should == [{"TZID" => "(GMT-05.00) Eastern Time (US & Canada)"}, "20090804T120000"]
     end
+
+    it "should handle escaped semicolons" do
+      RiCal::Parser.params_and_value(";X-RESPONSE-COMMENT=\"Kan vi k&ouml\\;ra p&aring\\; ons dagar\":mailto:foo@bar.com").should == [{"X-RESPONSE-COMMENT" => "Kan vi k&ouml\\;ra p&aring\\; ons dagar"}, "mailto:foo@bar.com"]
+    end
   end
   
   def self.describe_property(entity_name, prop_name, params, value, type = RiCal::PropertyValue::Text)
